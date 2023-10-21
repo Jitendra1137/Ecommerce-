@@ -1,0 +1,42 @@
+/* Customize the buttons */
+.container h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/* Customize the form input */
+.form-control {
+  width: 60px;
+}
+
+/* Adjust the spacing between rows */
+.row {
+  margin-bottom: 20px;
+}
+/* Customize the buttons for small screens */
+@media (max-width: 576px) {
+  .btn {
+    width: 30px;
+    height: 30px;
+    /* Add some margin classes here */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .form-control {
+    width: 30px;
+    height: 30px;
+  }
+  /* Use d-flex and align-items-center classes here */
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #set {
+    margin-top: 13%;
+  }
+}

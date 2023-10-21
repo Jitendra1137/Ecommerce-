@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Login Page</title>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      @media (min-width: 768px) {
+        /* Use margin-top and margin-bottom classes to add some space around the form */
+        .col-md-6 {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        #set {
+          margin-top: 18%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <!-- Use container class here -->
+    <div class="container">
+      <!-- Use row class here -->
+      <div class="row">
+        <!-- Use col-md-6 class and mx-auto class for centering the form -->
+        <div class="col-md-6 mx-auto">
+          <!-- Use form tag for form -->
+          <form id="login-form">
+            <!-- Use form-group class for email input -->
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <!-- Use form-group class for password input -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <!-- Use btn class for submit button -->
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="set">
+      <div id="footer"></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      fetch("../Header-Footer/header.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("header").innerHTML = html;
+        });
+      // Fetch and insert the footer
+      fetch("../Header-Footer/footer.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom script -->
+    <script src="./login.js"></script>
+  </body>
+</html>

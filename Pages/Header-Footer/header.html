@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <!-- Including Bootstrap File From GetBootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* Header Style */
+
+      /* Toggler Style Start */
+      .custom-toggler .navbar-toggler-icon {
+        background-color: red;
+        border: black;
+      }
+      .navbar-toggler-icon {
+        color: red;
+      }
+      .navbar-toggler {
+        .navbar-toggler-icon {
+          background-image: none;
+        }
+
+        .navbar-toggler-icon::before {
+          font-family: FontAwesome;
+          content: "|||";
+        }
+      }
+      /* Toggler Style End */
+      /* Customize the buttons */
+
+      .btn,
+      .nav-link {
+        border-radius: 10px;
+      }
+
+      /* Add hover effects to the buttons */
+      .btn:hover,
+      .nav-link:hover {
+        background-color: #17a2b8;
+        border-radius: 10px;
+        color: blueviolet;
+      }
+
+      /* Increase the size and color of the cart icon */
+      .fa-shopping-cart {
+        font-size: 24px;
+        color: whitesmoke;
+      }
+      .search-btn {
+        background-color: whitesmoke;
+      }
+      @media (max-width: 991.98px) {
+        .custom-logo {
+          width: 15%;
+          height: 10%;
+        }
+
+        @media (min-width: 992px) {
+          .custom-logo {
+            width: 25%;
+            height: 25%;
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        .search-btn {
+          margin-left: 105%;
+          margin-top: -32%;
+          background-color: whitesmoke;
+        }
+      }
+      /* Nav BackGround Color */
+      #nav-color {
+        background-color: whitesmoke;
+      }
+      /* Header Style End */
+    </style>
+  </head>
+  <body>
+    <!-- Header Style -->
+
+    <header>
+      <!-- ====================  First Part Of the Header Start==============-->
+      <nav
+        class="navbar navbar-expand-md first-nav"
+        style="background-color: #4a3ba9"
+      >
+        <div class="container-fluid">
+          <div class="custom-logo">
+            <img
+              src="../../Assets/logo.png"
+              alt="logo"
+              style="height: 60px; width: 130px"
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav justify-content-center flex-wrap w-100 nav-search"
+            >
+              <li class="nav-item">
+                <form role="search">
+                  <input
+                    class="form-control search-input"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-light search-btn" type="submit">
+                    Search
+                  </button>
+                </form>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav align-items-md-center ml-auto mb-lg-0 cart-n-loginbtn"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../../Pages/Login/login.html"
+                >
+                  <button class="btn btn-primary">Login</button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../Pages/Cart/cart.html">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- =========First Part Of Header Ends ===========-->
+
+    <!-- ===================Second part Of Header Start============= -->
+
+    <nav
+      class="navbar navbar-expand bg-body-tertiary second-nav"
+      id="nav-color"
+    >
+      <div class="container-fluid">
+        <div
+          class="collapse d-flex justify-content-between navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav justify-content-center flex-wrap w-100">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../Pages/Home-Page/home.html"
+              >
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../../Product-Pages/All-Products.html">
+                All Products
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Women
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Women/women.html"
+                  >
+                    All
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Women/women-dresses.html"
+                  >
+                    Dresses
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Women/women-pant.html"
+                  >
+                    Pants
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Women/women-skirt.html"
+                  >
+                    Skirts
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Men
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Men/men.html"
+                  >
+                    All
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Men/hoodies.html"
+                  >
+                    Hoodies
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Men/pants.html"
+                  >
+                    Pants
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../Product-Pages/Men/shirts.html"
+                  >
+                    Shirts
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../Product-Pages/Kid/kids.html"
+              >
+                Kids
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Pages/Contact/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
